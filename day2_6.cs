@@ -16,10 +16,10 @@ namespace HelloWorld
 		if (temp >= 100.00){
 		 answer = "gas";
 		}
-		else if (temp >0 && temp <100){
+		else if (temp >0){
 		answer = "liquid";
 		}
-		else if (temp <= 0) {
+		else {
 		answer = "solid";
 		}
 		Console.WriteLine("The H2O is in a {0} form.", answer);
