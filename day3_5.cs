@@ -10,7 +10,7 @@ internal class Program
         {
             for (int j=1; j <=9; j++)
             {
-                Console.Write("{0}x{1}={2} ", i, j, i*j);
+                Console.Write("{0}x{1}={2, 2:d} ", i, j, i*j);
             }
             Console.WriteLine();
         }
