@@ -78,3 +78,33 @@ internal class Program
     }   
 }
 
+-------------------------------------------------------------------
+    using System;
+using System.Net.Http.Headers;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Random rnd = new Random();
+        int[] int_list = new int[10];
+       
+        
+        for (int i = 0; i < 10; i++) {
+            int_list[i] = rnd.Next(1,100);
+            Console.Write("{0} ", int_list[i]);
+        }
+        Console.WriteLine();
+        for (int i = 0; i < 100; i += 10) {
+            Console.Write("{0} - {1}: ", i, i + 9);
+            for (int j = 0; j <int_list.Length; j++)
+            {
+                if (int_list[j] >= i && int_list[j] < i + 10)
+                {
+                    Console.Write("{0} ", int_list[j]);
+                }
+            }
+            Console.WriteLine();
+        }
+    }   
+}
